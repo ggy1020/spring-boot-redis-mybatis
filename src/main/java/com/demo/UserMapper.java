@@ -9,4 +9,6 @@ import java.util.List;
 public interface UserMapper {
 
     public List<User>  queryUserList();
+
+    public User  queryOne(String id);
 }
