@@ -11,4 +11,6 @@ public interface UserMapper {
     public List<User>  queryUserList();
 
     public User  queryOne(String id);
+
+    public String queryName(String id);
 }
