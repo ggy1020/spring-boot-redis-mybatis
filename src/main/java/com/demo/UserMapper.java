@@ -12,5 +12,5 @@ public interface UserMapper {
 
     public User  queryOne(String id);
 
-    public String queryName(String id);
+    public String queryName(int  id);
 }
