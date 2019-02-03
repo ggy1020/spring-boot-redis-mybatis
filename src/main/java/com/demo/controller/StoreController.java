@@ -19,16 +19,5 @@ import org.springframework.stereotype.Controller;
 @RequestMapping("/store")
 public class StoreController {
 
-    @Autowired
-    private IStoreService storeService;
-
-    /**
-     * 获取门店信息
-     *
-     * */
-    @RequestMapping(value = "/detail")
-    public String getStoreDetail(){
-        return storeService.getStoreDetail();
-    }
 }
 
