@@ -7,6 +7,7 @@ import com.demo.model.Store;
 import com.demo.mapper.StoreMapper;
 import com.demo.service.IStoreService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
@@ -21,6 +22,7 @@ import java.util.Map;
  * @since 2019-02-01
  */
 @Service
+@Slf4j
 public class StoreServiceImpl extends ServiceImpl<StoreMapper, Store> implements IStoreService {
 
     @Override
