@@ -33,12 +33,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<scope>runtime</scope>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -70,18 +64,6 @@
 			<version>2.0</version>
 		</dependency>
 
-		<dependency>
-			<groupId>freemarker</groupId>
-			<artifactId>freemarker</artifactId>
-			<version>2.3.9</version>
-		</dependency>
-
-		<dependency>
-			<groupId>com.ibeetl</groupId>
-			<artifactId>beetl</artifactId>
-			<version>2.9.8</version>
-		</dependency>
-
 
 		<!-- MySQL连接驱动 -->
 		<dependency>
@@ -109,21 +91,16 @@
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/aspectj/aspectjrt -->
-		<dependency>
-			<groupId>aspectj</groupId>
-			<artifactId>aspectjrt</artifactId>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>aspectj</groupId>-->
+			<!--<artifactId>aspectjrt</artifactId>-->
+		<!--</dependency>-->
 
 		<!-- https://mvnrepository.com/artifact/aspectj/aspectjweaver -->
-		<dependency>
-			<groupId>aspectj</groupId>
-			<artifactId>aspectjweaver</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>com.jack</groupId>
-			<artifactId>consul-api</artifactId>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>aspectj</groupId>-->
+			<!--<artifactId>aspectjweaver</artifactId>-->
+		<!--</dependency>-->
 
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
@@ -133,13 +110,6 @@
 			<scope>import</scope>
 		</dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-consul-discovery -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-consul-discovery</artifactId>
-            <!--<version>2.0.0.RELEASE</version>-->
-        </dependency>
-
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -147,21 +117,12 @@
             <scope>provided</scope>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-config</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
-        </dependency>
-
         <!--feign依赖 配置-->
         <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-feign -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-feign</artifactId>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.cloud</groupId>-->
+            <!--<artifactId>spring-cloud-starter-feign</artifactId>-->
+        <!--</dependency>-->
 
         <!--consul中健康检查需要用到actuator，不添加会check failing-->
         <!--<dependency>
@@ -176,19 +137,30 @@
 		</dependency>
 
         <!-- 引入swagger自动化文档 -->
-		<dependency>
-			<groupId>io.springfox</groupId>
-			<artifactId>springfox-swagger2</artifactId>
-			<version>2.9.2</version>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>io.springfox</groupId>-->
+			<!--<artifactId>springfox-swagger2</artifactId>-->
+			<!--<version>2.9.2</version>-->
+		<!--</dependency>-->
 
-		<dependency>
-			<groupId>io.springfox</groupId>
-			<artifactId>springfox-swagger-ui</artifactId>
-			<version>2.9.2</version>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>io.springfox</groupId>-->
+			<!--<artifactId>springfox-swagger-ui</artifactId>-->
+			<!--<version>2.9.2</version>-->
+		<!--</dependency>-->
 
-	</dependencies>
+		<!-- durid 连接池配置-->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid</artifactId>
+			<version>1.1.20</version>
+		</dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+        </dependency>
+
+    </dependencies>
 
 	<build>
 		<plugins>

@@ -2,7 +2,6 @@ package com.demo.controller;
 
 import com.demo.UserMapper;
 import com.demo.domain.User;
-import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,7 +17,6 @@ public class MapperController {
 
     @ResponseBody
     @RequestMapping("/queryUser")
-    @ApiOperation(value = "")
     public List<User>   queryUserList(){
 
         List<User>  list  = userMapper.queryUserList();
